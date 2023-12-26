@@ -1,1 +1,13 @@
 
+.squareYellow {
+    height: 100px;
+    width: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(227, 189, 17);
+    border: 2px solid #000;
+    
+}
+
+

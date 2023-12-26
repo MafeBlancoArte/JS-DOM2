@@ -26,5 +26,15 @@ function cambiado  (){
     document.querySelector("#textArea").innerHTML=textArea;
 };
 
+// Cambiar color del Cuadro //
+
+document.querySelector("#colorRosa").addEventListener("click",rosa );
+document.querySelector("#colorAmarillo").addEventListener("click",amarillo);
 
 
+function rosa (){
+    document.getElementById('areaTrabajo').style.backgroundColor = 'pink';
+};
+function amarillo () {
+    document.getElementById('areaTrabajo').style.backgroundColor = 'rgb(227, 189, 17)';
+};
