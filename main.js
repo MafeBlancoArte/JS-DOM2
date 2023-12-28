@@ -41,3 +41,30 @@ function amarillo () {
 
 // juego seleccion aleatoria participantes juego //
 
+    window.onload = function(){
+        window.datos = [];
+    }
+
+    function agregarElemento(){
+      let newPlayer = document.getElementById('texto').value;
+      
+      datos.push(newPlayer);
+    
+    }
+    
+    function mostrarArreglo(){
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = '';
+        
+        for (const newPlayer of datos) {
+            let datoParrafo = document.createElement('p');
+            datoParrafo.innerText = newPlayer;
+
+            resultado.appendChild(datoParrafo);
+        };
+        console.log(datos);
+        console.log(datos.length);
+      
+    }
+
+

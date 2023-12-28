@@ -16,6 +16,11 @@
     height: 24px;
     align-items: center;
 }
+.array{
+    display: ;
+  
+
+}
 .lineResults{
     width: 400px;
     height: 1px;
@@ -28,3 +33,4 @@
     background-color:rgb(109, 105, 105);
     text-shadow: grey;
 }
+
