@@ -41,22 +41,22 @@ function amarillo () {
 
 // juego seleccion aleatoria participantes juego //
 
-    window.onload = function(){
+   
+      window.onload = function(){
         window.datos = [];
-    }
+      }
 
     function agregarElemento(){
-      let newPlayer = document.getElementById('texto').value;
-      
-      datos.push(newPlayer);
-    
-    }
-    
+        let newPlayer = document.getElementById('texto').value;
+       
+        datos.push(newPlayer);
+  
+    };
     function mostrarArreglo(){
         let resultado = document.getElementById('resultado');
         resultado.innerHTML = '';
         
-        for (const newPlayer of datos) {
+        for ( let newPlayer of datos) {
             let datoParrafo = document.createElement('p');
             datoParrafo.innerText = newPlayer;
 
@@ -64,7 +64,23 @@ function amarillo () {
         };
         console.log(datos);
         console.log(datos.length);
-      
     }
+    let btnRandom = document.querySelector('button');
+    let player = document.querySelector('h2');
+
+    function getRandomNumber (min, max) {
+        let step1 = max - min + 1;
+        let step2 = Math.random() * step1;
+        let player = Math.floor(step2) + min;
+
+        return player;
+    }
+
+    btnRandom.addEventListener('click', () => {
+        let index = getRandomNumber(0, datos.length);
+        result.innerText = datos[index];
+
+    });
+
 
 
