@@ -43,19 +43,23 @@
     
     <div class="dataParticipantes" >
         <p id="InsertarParticipa">Insertar participantes</p>
-        <input type="text" id="texto"></input>
+        <input type="text" id="Texto"/>
         <input type="button" id="btnAgregarElemento" value="Añadir" onclick="agregarElemento();"></input>
-        <input type="button" id="btnMostrarArreglo" value="Mostrar" onclick="mostrarArreglo();"></input> 
+        <input type="button" id="btnMostrarArreglo" value="Mostrar" onclick="mostrarArreglo();" /> 
     </div>
     <br>
     <div class="array" id="resultado" ></div>
     <br>
     <hr class="lineResults"></hr>
     <div class="selectionPart">
-        <input type="buttonElegirPte" id="elegirParticipante" value="Elegir Participante"></input>
-        <input type="buttonRestart" id="Restart" value="Restart"></input>
+        <input type="button" class="buttonElegirPte" id="elegirParticipante" value="Elegir Participante" onclick="getRandomName();"/>
+        <input type="buttonStart" id="mostrarElegido" value="Start" onclick="startNewRandom();"/>
     </div>
-
+    <br>
+    <br>
+    <div class="eliminado" id="resultEliminado" ></div>
+    <hr class="lineEliminado"></hr>
+    
 
 
     

@@ -17,8 +17,8 @@
     align-items: center;
 }
 .array{
-    display: ;
-  
+    display: flex;
+
 
 }
 .lineResults{
@@ -30,7 +30,13 @@
 }
 .buttonElegirPte{
     width: auto;
-    background-color:rgb(109, 105, 105);
-    text-shadow: grey;
+    background-color:rgb(78, 133, 60);
+    color: white;
 }
-
+.lineEliminado{
+    width: 400px;
+    height: 1px;
+    margin-left: 0px;
+    border-color: rgb(209, 97, 97);
+    background-color:#b81212;
+}
