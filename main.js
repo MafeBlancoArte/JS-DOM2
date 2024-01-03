@@ -41,7 +41,6 @@ function amarillo () {
 
 // juego seleccion aleatoria participantes juego //
 
-    
 
     let miArray = ["Gabi", "Ana", "Jose"];
 
@@ -54,7 +53,6 @@ function amarillo () {
             miArray.push(newPlayer);  
             console.log (miArray);
         };
-
     function mostrarArreglo(){
         let resultado = document.getElementById('resultado');
         resultado.innerHTML = miArray;
@@ -63,16 +61,11 @@ function amarillo () {
     function getRandomName(){
         
         let randomElegido = Math.floor(Math.random() * miArray.length);
-        console.log (randomElegido);  
-        
+        console.log (randomElegido);
+
         let eliminado = document.getElementById('resultEliminado');
         eliminado.innerHTML = randomElegido;
     };
     function startNewRandom(){
-      
-    };
-  
     
-
-
-
+    };
