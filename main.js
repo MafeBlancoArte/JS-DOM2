@@ -1,3 +1,5 @@
+
+
 document.querySelector("#btnSumar").addEventListener("click",sumarUno);
 document.querySelector("#btnRestar").addEventListener("click",restarUno);
 let contador=0;
@@ -42,30 +44,31 @@ function amarillo () {
 // juego seleccion aleatoria participantes juego //
 
 
-    let miArray = ["Gabi", "Ana", "Jose"];
-
-        console.log (miArray);
+    let jugadores = ["Gabi", "Ana", "Jose"];
+       
+        console.log (jugadores);
      
     function agregarElemento(){ 
-            
-        let newPlayer = document.getElementById("Texto").value;
-              
-            miArray.push(newPlayer);  
-            console.log (miArray);
-        };
+        
+        let newPlayer = document.getElementById('nombreJugador').value;
+
+        jugadores.push(newPlayer);
+        console.log (jugadores);
+    };
     function mostrarArreglo(){
         let resultado = document.getElementById('resultado');
-        resultado.innerHTML = miArray;
+        resultado.innerHTML = jugadores;
     };
-
     function getRandomName(){
         
-        let randomElegido = Math.floor(Math.random() * miArray.length);
+        let randomElegido = Math.floor(Math.random() * jugadores.length);
         console.log (randomElegido);
 
         let eliminado = document.getElementById('resultEliminado');
         eliminado.innerHTML = randomElegido;
+
     };
-    function startNewRandom(){
+   
     
-    };
+    
+   
