@@ -44,8 +44,8 @@ function amarillo () {
 // juego seleccion aleatoria participantes juego //
 
 
-    let jugadores = ["Gabi", "Ana", "Jose"];
-       
+    let jugadores = [ "Gabi", "Ana", "Jose",];
+
         console.log (jugadores);
      
     function agregarElemento(){ 
@@ -54,7 +54,9 @@ function amarillo () {
 
         jugadores.push(newPlayer);
         console.log (jugadores);
+
     };
+    
     function mostrarArreglo(){
         let resultado = document.getElementById('resultado');
         resultado.innerHTML = jugadores;
@@ -64,11 +66,23 @@ function amarillo () {
         let randomElegido = Math.floor(Math.random() * jugadores.length);
         console.log (randomElegido);
 
-        let eliminado = document.getElementById('resultEliminado');
+        let eliminado = randomElegido;
         eliminado.innerHTML = randomElegido;
 
     };
-   
+    function startNewRandom(){
+
+        let newJugadores = document.getElementById('resultEliminado');
+
+        newJugadores = jugadores.remove(randomElegido);
+        console.log (newJugadores);
+
+        let result = newJugadores;
+        result.innerHTML = newJugadores;
+
+    };  
+    
+    
     
     
    
