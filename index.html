@@ -45,7 +45,7 @@
         <p id="InsertarParticipa">Insertar participantes</p>
         <input type="text" id="nombreJugador"/>
         <input type="button" id="btnAgregarElemento" value="Añadir" onclick="agregarElemento();"></input>
-        <input type="button" id="btnMostrarArreglo" value="Mostrar" onclick="mostrarArreglo();" /> 
+        <input type="button" id="btnMostrarArreglo" value="Mostrar" onclick="mostrarArreglo();" ></input> 
     </div>
     <br>
     <div class="array" id="resultado" ></div>
@@ -53,10 +53,14 @@
     <hr class="lineResults"></hr>
     <div class="selectionPart">
         <input type="button" class="buttonElegirPte" id="elegirParticipante" value="Elegir Participante" onclick="getRandomName();"/>
-        <input type="buttonStart" id="mostrarElegido" value="Start" onclick="startNewRandom();"/>
+        <input type="button" class="random" id="mostrarSinElegido" value="Start" onclick="arrayElegidos();"></input>
     </div>
     <br>
-    <div class="eliminado" type="text" id="resultEliminado" ></div>
+    <div>
+        <h3 type="text" id= "randomName"></h3>
+        <p type="array" id="elegidos" ></p>
+    </div>
+    <br>
     <hr class="lineEliminado"></hr>
     
 

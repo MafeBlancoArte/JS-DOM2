@@ -60,29 +60,23 @@ function amarillo () {
     function mostrarArreglo(){
         let resultado = document.getElementById('resultado');
         resultado.innerHTML = jugadores;
+
+        return jugadores;
     };
     function getRandomName(){
         
-        let randomElegido = Math.floor(Math.random() * jugadores.length);
+        let randomElegido = Math.floor(Math.random() * jugadores.length-1);
         console.log (randomElegido);
 
         let eliminado = randomElegido;
         eliminado.innerHTML = randomElegido;
-
+        
+        jugadores.splice(randomElegido, 1);
+        console.log(jugadores);
     };
-    function startNewRandom(){
 
-        let newJugadores = document.getElementById('resultEliminado');
-
-        newJugadores = jugadores.remove(randomElegido);
-        console.log (newJugadores);
-
-        let result = newJugadores;
-        result.innerHTML = newJugadores;
-
-    };  
-    
-    
-    
-    
-   
+    function arrayElegidos(){
+        
+        let arraySplice = document.getElementById('elegidos');
+        arraySplice.innerHTML = jugadores;
+    };
